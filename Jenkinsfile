@@ -40,7 +40,7 @@ pipeline {
 
                 kubectl expose deployment flask-k8s-deployment \
                   --type=NodePort \
-                  --port=5000
+                  --port=5002
                 '''
             }
         }
