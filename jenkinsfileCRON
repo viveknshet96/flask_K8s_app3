@@ -35,12 +35,12 @@ pipeline {
         stage('Deploy to Kubernetes (Command Based)') {
             steps {
                 sh '''
-                kubectl delete deployment flask-k8s-deployment1 || true
+                kubectl delete deployment flask-k8s-deployment2 || true
 
-                kubectl create deployment flask-k8s-deployment1 \
+                kubectl create deployment flask-k8s-deployment2 \
                   --image=flask-k8s-app:1.0
 
-                kubectl expose deployment flask-k8s-deployment1 \
+                kubectl expose deployment flask-k8s-deployment2 \
                   --type=NodePort \
                   --port=5000
                 '''
