@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/<your-username>/flask-k8s-app.git'
+                    url: 'https://github.com/viveknshet96/flask_K8s_app3.git'
             }
         }
 
